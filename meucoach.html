@@ -1,84 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matchsquad - Bem-vindo</title>
+    <title>Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/Icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .card {
-            margin: 15px;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .card-title {
-            font-weight: bold;
-        }
-        .card p {
-            margin-bottom: 10px;
-        }
-        .card button {
-            margin-top: 10px;
-        }
-        .btn-disabled {
-            pointer-events: none;
-            background-color: #ccc;
-            color: #666;
-        }
-    </style>
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a href="menu.html"><img class="navbar-brand" src="assets/Logo.png" height="54.73px"></a>
-        <div class="ml-auto">
-            <a href="configuracoes.html" class="btn btn-outline-primary mr-2">Configurações</a>
-            <a href="logout.html" class="btn btn-outline-danger">Deslogar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="" data-bs-target="#exampleModal2" data-bs-toggle="modal">Contatar a plataforma</a>
+                </li>
+                <li class="nav-item">
+                    <img src="assets/1.jpg" class="profile-nav">
+                </li>
+            </ul>
         </div>
     </nav>
-    <br>
 
-    <div class="container mt-4">
-        <h2>Bem-vindo(a) à Matchsquad!</h2>
+    <br><br>
 
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <h5 class="card-title">Está na hora de aprender!</h5>
-                    <p>Acesse suas consultorias ou solicite um agendamento!</p>
-                    <p>Tudo pronto para você em apenas alguns cliques</p>
-                    <a href="minhasreunioes.html" class="btn btn-primary float float-right">Minhas reuniões</a><br>
-                    <br>
-                    <a href="visualizaragendamentos.html" class="btn btn-outline-primary">Ir para meus agendamentos</a><br>
-                    <a href="meucoach.html" class="btn btn-primary float float-right">Meu coach</a><br>
-                    <a href="telaescolhacoach.html" class="btn btn-primary float float-right">Trocar de Coach</a><br>
-                    <a href="telaescolhaconsultor.html" class="btn btn-primary float float-right">Consultor</a><br><br><br>
-                    <p>Dúvidas quanto ao funcionamento? <a href="ajuda.html" class="btn-link">Ajuda</a></p>
+    <div class="container text-center">
+        <div class="row justify-content-center">
+                <p>Seu coach desde 12 de junho de 2024.</p>
+                <p>2 reuniões realizadas. <br> Para ver seu histórico com este coach, clique <a href="minhasconsultoriascomcoach.html" class="btn-link">aqui</a></p>
+            <div class="col-lg-4">
+                <img src="https://th.bing.com/th/id/R.2016a2164049a3cc7210be51f20d9317?rik=8F6Zc077ztDwLA&riu=http%3a%2f%2fwww.alpha-design.cn%2fuploadfiles%2f20180802%2f20180802194215_4592.jpg&ehk=S5qH13WDNI1fkCEtsz1d5%2fDU%2fKBGwQzlRVA3vp4YPKA%3d&risl=&pid=ImgRaw&r=0" class="rounded-circle" alt="Profile Picture" width="150" height="150">
+                <h2 class="mt-3">Seu coach: Sérgio Maia</h2>
+                <p>Coach com habilidades em:</p>
+                <p>
+                    <i class="fa fa-check-square"></i> Educação Financeira<br>
+                    <i class="fa fa-check-square"></i> Investimentos
+                                    <p><strong>Há 1 ano na MatchSquad</strong></p>
+                <p><strong>Média das avaliações: 4.3</strong></p>
+                <div class="row justify-content-center mt-4">
+                    <a href="#" class="btn btn-primary">Ir para agendamento</a>
                 </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card">
-                    <h5 class="card-title">Avalie seus consultores e ajude-os a melhorar seu trabalho.</h5>
-                    <p>Avaliando um consultor você também nos ajuda a melhorar nossa plataforma e ajuda outros empreendedores como você a encontrar bons consultores</p>
-                    <p><strong>*Disponível após realizar sua primeira consultoria</strong></p>
-                    <button class="btn btn-disabled">Avaliações</button>
-                </div>
+                </p>
             </div>
         </div>
 
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-6">
+<div class="row justify-content-center mt-4">
+                <p><strong>Descrição:</strong></p>
+                <div class="core-section-container__content break-words">
+                    <p>Como Mentor e Coach na FDC, apóio executivos e organizações em suas jornadas de desenvolvimento e transformação. Com mais de 30 anos de experiência em bancos e negócios internacionais, tenho um profundo conhecimento dos desafios e oportunidades do mercado global. Sou Master Certified Coach da ICF, Mentor Coach Certificado e Supervisor de Coaching Credenciado, com múltiplas certificações e diplomas em coaching, liderança e psicologia organizacional.
+                    <br><br>
+                    Minha missão é ajudar líderes e equipes a alcançar seus objetivos, melhorar seu desempenho e liberar seu potencial. Utilizo uma variedade de ferramentas e metodologias, como sistemas de avaliação, supervisão de coaching e coaching de equipe, para fornecer soluções personalizadas e eficazes. Também contribuo para a profissão de coaching orientando e supervisionando outros coaches, bem como escrevendo e publicando artigos sobre temas de coaching. Sou apaixonado por aprender, compartilhar e colaborar com outras pessoas na área.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-6">
+                <a href="Menu.html" class="btn btn-primary">Voltar</a>
+            </div>
+        </div>
     </div>
-
+    <br><br><br>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
